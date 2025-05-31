@@ -1,0 +1,251 @@
+cssnuha
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #000000;
+  color: #ffa500;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background: black;
+  padding: 60px 30px;
+  text-align: center;
+  color: #ff500;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #fff;
+  padding: 18px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #6c5f74;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #c08798;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+.home h1 {
+  color: #ffa500;
+}
+
+.home p {
+  color: blue;
+}
+
+
+.home h2 {
+  color: #000000;
+}
+
+
+.home ol {
+  color: black;
+}
+
+
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: black;
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e0d3ec;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* BOX CARD */
+.textbox {
+  background-color: grey;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.textbox:hover {
+  transform: translateY(-3px);
+}
+
+.textbox h3 {
+  color: black;
+  margin-top: 0;
+}
+
+/* STEP CARD LAYOUT */
+.steps-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.step-card {
+  background-color: #f9f5f8;
+  border-left: 8px solid #d9b3c9;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: scale(1.02);
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #b8d8cd;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-card h4 {
+  margin-top: 30px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ececec;
+  text-align: center;
+}
+
+th {
+  background-color: #d6e5e3;
+  color: #3e3e3e;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 16px;
+  border: 5px solid #f3d1dc;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* BUTTON (optional use) */
+.btn {
+  display: inline-block;
+  background-color: #c08798;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a56f85;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(to right, #e9daf3, #d6e5e3);
+  font-size: 14px;
+  color: #4e4e4e;
+  margin-top: 60px;
+}
